@@ -28,3 +28,8 @@ To forbid any query to be run if the connection was opened after 6 PM and before
 `(gethour(connection_start_time) >= 18 OR gethour(connection_start_time) < 7)`
 
 For more variation to handle date time you can refer to this [link](https://community.denodo.com/docs/html/browse/8.0/en/vdp/vql/functions/datetime_functions/datetime_functions)
+
+This is smaple how you can extend time operation condition by validated it first in the VQL.
+
+`SELECT TO_DATE('M dd yyyy', '3 05 2020'), CURRENT_DATE, CURRENT_DATE >TO_DATE('M dd yyyy', '3 05 2020')
+FROM Dual();`
