@@ -2,7 +2,7 @@
 Technical document to use and manage Denodo
 
 
-# How to set limit retruned row
+# How to set limit of rows return
 
 You can set the limit of rows return by using Resource Manager. You first need to set the plan by speciiying the outcome of the plan. Let's say 100K row return. Then you specify the rule to match the plan. 
 
